@@ -1,0 +1,180 @@
+@import "partials/partials";
+
+// custom variiables
+$head-color-light: #1f3b57;
+$head-color-alt: #3576B7;
+
+$paragraph-color-alt:#536C84; 
+
+
+.sec-get-in-touch{
+    font-family: $font-primary-poppin;
+    background-color: #F2F9FF;
+    padding-top: 140px;
+    padding-bottom: 160px;
+    position: relative;
+    .schedule-btns{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+        transform: translateY(-50%);
+        z-index: 3;
+        .btn-schedule{
+            background-color:$btn-color;
+            border: none !important;
+            outline: none !important;
+        }
+    }
+    @media screen and ($sm-1679){
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+    @media screen and ($sm-1441){
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+    @media screen and ($sm-1367){
+        // padding-top: 50px;
+        padding-bottom: 72px;
+    }
+    @media screen and ($sm-1199){
+        // padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    @media screen and ($sm-991){
+         padding-top:60px;
+        padding-bottom: 40px;
+    }
+    .col-contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+    .title{
+        color: $head-color-light;
+        font-family:$font-primary;
+        font-size: 47px;
+        @media screen and ($sm-1679){
+            font-size: 41px;
+        }
+        @media screen and ($sm-1441){
+           // font-size: 38px;
+        }
+        @media screen and ($sm-1199){
+            font-size: 35px;
+        }
+        @media screen and ($sm-767)
+        {
+            font-size: 28px;
+        }
+        
+        span{
+            color: $head-color-alt;
+        }
+    }
+
+    .subtitle{
+        color: $paragraph-color-alt;
+        font-size: 19px;
+        font-weight: 400;
+        @media screen and ($sm-1679){
+            font-size: 16px;
+        } 
+        @media screen and ($sm-767){
+            font-size: 15px;
+        }  
+    }
+
+    .contactList{
+        list-style: none;
+        padding-left: 0;
+        color: $paragraph-color-alt;
+        font-size: 19px;
+        padding-top: 2.5em;
+        @media screen and ($sm-1679){
+            font-size: 16px;
+        }
+        @media screen and ($sm-1441){
+            font-size: 14px;
+            padding-top: 2em;
+        }
+        @media screen and ($sm-991){
+            font-size: 13px;
+            padding-top: 1.5em;
+        }
+        .contItm{
+            @media screen and ($lg-1200){
+                min-width: 130px;
+                display: inline-block;
+            }
+        }
+        .info{
+            @media screen and ($sm-479){
+                display: block;
+            }
+        }
+        li{
+            .ico{
+                max-width: 1em;
+                margin-right: 1.2em;
+                @media screen and ($sm-1199){
+                    margin-right: 10px;
+                }
+                @media screen and ($sm-991){
+                    margin-right: 8px;
+                    max-width: 0.7em;
+                }
+                @media screen and ($sm-479){
+                    margin-right: 3px; 
+                }
+                img{
+                    max-width: 1em;
+                    object-fit: contain;
+                }
+            }
+            & + li{
+                margin-top: 2em;
+                @media screen and ($sm-1679){
+                    margin-top: 1.8em;
+                }
+                @media screen and ($sm-1441){
+                    margin-top: 1.6em;
+                }
+                @media screen and ($sm-991){
+                    margin-top: 1.4em;
+                }
+            }
+        }
+    }
+
+    .col-maps{
+        @media screen and ($sm-991){
+            padding-top:  20px;
+        }
+    }
+    
+}
+
+.map-responsive{
+    overflow:hidden;
+    aspect-ratio: 1.54;
+    position:relative;
+    width: 100%;
+    border-radius: 15px;
+    @media screen and ($lg-992){
+        max-width: 567px;
+    }
+    @media screen and ($sm-991){
+        max-height: 300px;
+    }
+    iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}

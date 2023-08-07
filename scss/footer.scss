@@ -1,0 +1,191 @@
+
+@import "partials/partials";
+
+// additional colors
+$txt-color-dark: #0B0F12;
+
+.backtoTop{
+    width: 60px;
+    height: 60px;
+    background-color: #D6EBFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9;
+    right: 200px;
+    bottom: 80px;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    transition-delay: 0.2s;
+    transform: translateY(100%);
+    &.shown{ 
+        opacity: 1;
+        transform: translateY(0);
+    }
+    img{
+        width: 35%;
+        object-fit: contain;
+    }
+    @media screen and ($sm-1679){
+        right: 100px;
+        bottom: 50px;
+        width: 50px;
+        height: 50px;
+    }
+    @media ($sm-1441){
+        width: 40px;
+        height: 40px;
+    }
+    @media (max-width: 1399px){
+        right: 50px;
+        
+    }
+    @media ($sm-1199){
+        right: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    @media ($sm-991){
+        right: 50px;
+    }
+    @media ($sm-767){
+        right: 10px;
+        bottom: 20px;
+    }
+}
+
+.footer{
+    .container{
+        position: relative;
+    }
+    font-family: $font-primary-poppin;
+    .col-logo{
+        flex: 1 0 236px;
+        max-width: 236px;
+        display: flex;
+        @media screen and ($sm-1679){
+            flex: 1 0 190px;
+            max-width: 190px;
+        }
+        @media screen and ($sm-1441){
+            flex: 1 0 180px;
+            max-width: 180px;
+        }
+        @media screen and ($sm-1199){
+            flex: 1 0 140px;
+            max-width: 140px;
+        }
+        @media screen and ($sm-767){
+            flex: 1 0 100%;
+            max-width: 100%;
+            padding-bottom: 20px;
+        }
+        .footer-logo-link{
+            flex: 0 0 100%;
+            @media screen and ($sm-1199){
+                max-width: 140px;
+            }
+            @media screen and ($sm-767){
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .footer-logo{
+            max-width: 100%;
+            object-fit: contain;
+           
+        }
+    }
+    .footer-links-cont{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        @media screen and ($sm-1679){
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        @media screen and ($sm-1441){
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+        
+        @media screen and ($sm-1199){
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+        @media screen and ($sm-991){
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+    }
+    .footer-links{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: flex-end;
+        gap: 70px;
+        @media screen and ($sm-1679){
+            gap: 50px;
+        }
+        @media screen and ($sm-1441){
+            gap: 40px;
+        }
+        @media screen and ($sm-1199){
+            gap: 20px;
+        }
+        @media screen and ($sm-767){
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        & > li{
+            @media screen and ($sm-767){
+                width: 100%;
+                text-align: center;
+            }
+            
+        }
+        .nav-link{
+            color: $txt-color-dark;
+            font-size: 19px;
+            @media screen and ($sm-1679){
+                font-size: 16px;
+            }
+            @media screen and ($sm-1441){
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.footer-copy{
+    background-color: #F2F9FF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #203B57;
+    font-size: 14px;
+    @media screen and ($sm-1679){
+        font-size: 13px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    @media screen and ($sm-1441){
+        font-size: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    @media screen and ($sm-1199){
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    @media screen and ($sm-991){
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+.copyrights{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}

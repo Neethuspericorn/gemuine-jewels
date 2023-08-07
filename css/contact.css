@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    outline: 0; }
+  a:focus {
+    text-decoration: none; }
+
+a[href^=tel] {
+  cursor: default; }
+
+ul,
+ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+.sec-inner {
+  padding: 83px 0 53px; }
+  .sec-inner.txt-position-opac::after {
+    display: none; }
+  .sec-inner.txt-position-opac::before {
+    top: 180px;
+    left: -233px;
+    font: normal normal 600 220px/305px "Playfair Display", serif; }
+  .sec-inner .sub-sec-title-wrp {
+    border-bottom: 1px solid #DCEBF8;
+    margin-bottom: 21px;
+    padding-bottom: 10px; }
+    .sec-inner .sub-sec-title-wrp .sub-sec-title {
+      font: normal normal 500 47px/63px "Playfair Display", serif;
+      color: #08172C; }
+    .sec-inner .sub-sec-title-wrp p {
+      font: normal normal 300 19px/29px "Poppins", sans-serif; }
+  .sec-inner .contact-form .form-control {
+    background-color: #ECF6FF;
+    border: 1px solid #D9EDFF;
+    border-radius: 0px;
+    margin-top: 36px;
+    height: 58px;
+    font: normal normal normal 18px/65px "Poppins", sans-serif; }
+    .sec-inner .contact-form .form-control::-webkit-input-placeholder {
+      color: #9BB8D4; }
+    .sec-inner .contact-form .form-control::-moz-input-placeholder {
+      color: #9BB8D4; }
+    .sec-inner .contact-form .form-control::-o-input-placeholder {
+      color: #9BB8D4; }
+    .sec-inner .contact-form .form-control:focus {
+      outline: none;
+      box-shadow: none; }
+    .sec-inner .contact-form .form-control.txtarea {
+      height: 139px; }
+  .sec-inner .contact-form .btn-submit {
+    background-color: #3A598E;
+    color: #fff;
+    font: normal normal 500 19px/22px "Poppins", sans-serif;
+    padding: 14px 48px;
+    border-radius: 6px;
+    margin-top: 24px; }
+    .sec-inner .contact-form .btn-submit:focus {
+      outline: none;
+      box-shadow: none; }
+
+@media (max-width: 1800px) {
+  .sec-inner.txt-position-opac::before {
+    font: normal normal 600 175px/305px "Playfair Display", serif;
+    left: -200px; } }
+@media (max-width: 1679px) {
+  .sec-inner {
+    padding: 60px 0 43px; }
+
+  .sec-inner .sub-sec-title-wrp .sub-sec-title {
+    font: normal normal 500 40px/56px "Playfair Display", serif; }
+
+  .sec-inner.txt-position-opac::before {
+    top: 180px;
+    left: -200px;
+    font: normal normal 600 170px/305px "Playfair Display", serif; }
+
+  .sec-inner .contact-form .btn-submit {
+    font: normal normal 500 16px/22px "Poppins", sans-serif; } }
+@media (max-width: 1441px) {
+  .sec-inner {
+    padding: 50px 0 40px; }
+
+  .sec-inner .sub-sec-title-wrp .sub-sec-title {
+    font: normal normal 500 34px/50px "Playfair Display", serif; }
+
+  .sec-inner .sub-sec-title-wrp p {
+    font: normal normal 300 17px/27px "Poppins", sans-serif; }
+
+  .sec-inner .contact-form .form-control {
+    margin-top: 25px;
+    font: normal normal normal 16px/46px "Poppins", sans-serif;
+    height: 45px; }
+
+  .sec-inner.txt-position-opac::before {
+    top: 180px;
+    left: -200px;
+    font: normal normal 600 160px/305px "Playfair Display", serif; } }
+@media (max-width: 1281px) {
+  .sec-inner {
+    padding: 40px 0 35px; }
+
+  .sec-inner .sub-sec-title-wrp .sub-sec-title {
+    font: normal normal 500 32px/46px "Playfair Display", serif; }
+
+  .sec-inner.txt-position-opac::before {
+    top: 180px;
+    left: -150px;
+    font: normal normal 600 120px/305px "Playfair Display", serif; }
+
+  .sec-inner .contact-form .btn-submit {
+    font: normal normal 500 15px/22px "Poppins", sans-serif; } }
+@media (max-width: 991px) {
+  .sec-inner {
+    padding: 35px 0 30px; }
+
+  .sec-inner .sub-sec-title-wrp .sub-sec-title {
+    font: normal normal 500 28px/38px "Playfair Display", serif; }
+
+  .sec-inner .sub-sec-title-wrp p {
+    font: normal normal 300 17px/27px "Poppins", sans-serif; }
+
+  .sec-inner .contact-form .form-control {
+    margin-top: 25px;
+    font: normal normal normal 14px/36px "Poppins", sans-serif;
+    height: 38px; }
+
+  .sec-inner .contact-form .btn-submit {
+    font: normal normal 500 14px/20px "Poppins", sans-serif; }
+
+  .sub-bnr.contact .sub-bnr-content {
+    justify-content: flex-start;
+    padding-top: 0px; } }
+@media (max-width: 767px) {
+  .sec-inner {
+    padding: 35px 0 30px; }
+
+  .sec-inner .sub-sec-title-wrp {
+    margin-bottom: 5px;
+    padding-bottom: 0px; }
+
+  .sec-inner .sub-sec-title-wrp .sub-sec-title {
+    font: normal normal 500 25px/35px Playfair Display;
+    margin-bottom: 10px; }
+
+  .sec-inner .sub-sec-title-wrp p {
+    font: normal normal 300 15px/22px "Poppins", sans-serif; }
+
+  .sub-bnr.contact {
+    background: #101C48 url(../img/contact-banner2x.png) no-repeat center;
+    height: 250px;
+    background-size: cover; }
+    .sub-bnr.contact .sub-bnr-content {
+      justify-content: flex-start;
+      padding-top: 0px; } }
+
+/*# sourceMappingURL=contact.css.map */

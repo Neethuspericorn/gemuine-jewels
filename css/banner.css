@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    outline: 0; }
+  a:focus {
+    text-decoration: none; }
+
+a[href^=tel] {
+  cursor: default; }
+
+ul,
+ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+.banner {
+  padding-top: 85px;
+  background: url(../img/banner-bg.png) no-repeat center center;
+  background-size: cover;
+  border-radius: 0px 0px 121px 0px;
+  position: relative;
+  overflow: hidden;
+  height: 1000px; }
+  .banner:before {
+    content: "";
+    background-color: #24406E;
+    height: 135px;
+    width: 50%;
+    position: absolute;
+    bottom: -10px;
+    right: 0; }
+  .banner:after {
+    content: "";
+    background-color: #fff;
+    height: 135px;
+    width: 50%;
+    position: absolute;
+    bottom: -10px;
+    left: 0; }
+  .banner .connect-business {
+    position: relative; }
+    .banner .connect-business .icon {
+      position: absolute;
+      transition: all 0.2s ease-in-out;
+      right: 35px; }
+    .banner .connect-business:hover .icon {
+      margin-right: -5px;
+      transition: all 0.2s ease-in-out; }
+  .banner .fade-sl {
+    z-index: 9;
+    margin-bottom: 0; }
+  .banner .slick-arrow {
+    top: 75%;
+    z-index: 99;
+    width: 35px;
+    height: 35px;
+    background-color: #fff !important;
+    margin: 0 2px;
+    border-radius: 7px; }
+  .banner .slick-next {
+    right: 30px;
+    background: url(../img/arrow-right-slick.png) no-repeat center center; }
+    .banner .slick-next:hover {
+      background: url(../img/arrow-right-slick.png) no-repeat center center #99bbf1 !important; }
+    .banner .slick-next:focus {
+      background: url(../img/arrow-right-slick.png) no-repeat center center !important;
+      background-color: #fff  !important; }
+  .banner .slick-prev {
+    left: auto;
+    right: 70px;
+    background: url(../img/arrow-left-slick.png) no-repeat center center; }
+    .banner .slick-prev:hover {
+      background: url(../img/arrow-left-slick.png) no-repeat center center #99bbf1 !important; }
+    .banner .slick-prev:focus {
+      background: url(../img/arrow-left-slick.png) no-repeat center center !important;
+      background-color: #fff  !important; }
+  .banner .slick-prev:before, .banner .slick-next:before {
+    content: ""; }
+  .banner .slick-dots {
+    left: 15px;
+    bottom: 200px;
+    text-align: inherit;
+    width: auto !important; }
+    .banner .slick-dots:after {
+      content: "03";
+      color: #fff;
+      font: 300 13px/20px "Poppins", sans-serif;
+      top: 8px;
+      right: -23px;
+      position: absolute; }
+
+.slick-dots li {
+  margin: 0px !important;
+  width: 90px !important;
+  height: 30px !important; }
+  .slick-dots li.slick-active:nth-of-type(1) .slider-dot {
+    color: #fff !important;
+    opacity: 1 !important;
+    position: absolute;
+    left: -20px; }
+  .slick-dots li.slick-active:nth-of-type(2) .slider-dot {
+    color: #fff !important;
+    opacity: 1 !important;
+    position: absolute;
+    left: -113px; }
+  .slick-dots li.slick-active:nth-of-type(3) .slider-dot {
+    color: #fff !important;
+    opacity: 1 !important;
+    position: absolute;
+    left: -203px; }
+  .slick-dots li .slider-dots {
+    font: 300 16px/20px "Poppins", sans-serif; }
+  .slick-dots li .slider-dot {
+    color: #fff;
+    font-size: 13px;
+    line-height: 12px;
+    opacity: 0; }
+  .slick-dots li button {
+    font-size: 12px;
+    color: #fff;
+    padding: 0 !important;
+    width: 100% !important;
+    display: inline-block; }
+    .slick-dots li button:before {
+      content: "" !important;
+      top: 15px !important;
+      width: 100% !important;
+      height: 1px !important;
+      background-color: #fff !important; }
+  .slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    border-radius: 50px;
+    height: 3px !important;
+    top: 13.5px !important;
+    transition: 0.2; }
+
+.slick-dots li button:hover:before {
+  opacity: .50 !important; }
+
+.bnr-container {
+  height: 100%; }
+
+.bnr-slider-cover {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%; }
+  .bnr-slider-cover .brand-titles {
+    color: #fff;
+    flex: 0 0 auto;
+    width: 41.66666667%;
+    margin-bottom: 150px; }
+    .bnr-slider-cover .brand-titles .tilte-lg {
+      font: 600 71px/87px "Playfair Display", serif;
+      letter-spacing: 0px;
+      margin-bottom: 15px; }
+    .bnr-slider-cover .brand-titles p {
+      font: 300 20px/33px "Poppins", sans-serif; }
+    .bnr-slider-cover .brand-titles .btn_cvr {
+      margin-top: 30px; }
+    .bnr-slider-cover .brand-titles .connect-business {
+      background-color: #fff;
+      height: 65px;
+      display: inline-flex;
+      align-items: center;
+      border-radius: 6px;
+      color: #23385B;
+      font: 500 19px/26px "Poppins", sans-serif;
+      min-width: 400px;
+      padding: 10px 25px 10px 35px;
+      justify-content: flex-start; }
+  .bnr-slider-cover .brand-images {
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    z-index: 9;
+    column-gap: 40px;
+    height: 100%;
+    align-items: end;
+    justify-content: end;
+    padding-right: 33px;
+    padding-top: 70px; }
+    .bnr-slider-cover .brand-images .brand-text {
+      position: absolute;
+      font: 600 130px/147px "Playfair Display", serif;
+      letter-spacing: 0px;
+      color: #2F4E82;
+      opacity: 0.47;
+      transform: rotate(270deg);
+      left: -160px;
+      bottom: 260px;
+      z-index: -1; }
+    .bnr-slider-cover .brand-images .brand-lg {
+      width: 450px;
+      padding-top: 100px;
+      max-width: 100%;
+      overflow: hidden; }
+    .bnr-slider-cover .brand-images .brand-sm {
+      width: 315px;
+      max-width: 100%;
+      margin-bottom: auto; }
+
+.mobile-brand-img {
+  display: none; }
+
+@media (max-width: 1679px) {
+  .bnr-slider-cover .brand-titles .tilte-lg {
+    font: 600 51px/55px "Playfair Display", serif;
+    letter-spacing: 0px;
+    margin-bottom: 15px; }
+
+  .bnr-slider-cover .brand-titles p {
+    font: 300 15px/21px "Poppins", sans-serif; }
+
+  .bnr-slider-cover .brand-titles .connect-business {
+    font: 500 16px/26px "Poppins", sans-serif;
+    min-width: 280px;
+    height: 50px;
+    padding-right: 15px;
+    padding-left: 15px; }
+
+  .bnr-slider-cover .brand-titles .connect-business img {
+    width: 20px; }
+
+  .bnr-slider-cover .brand-images .brand-lg {
+    width: 360px; }
+
+  .bnr-slider-cover .brand-images .brand-sm {
+    width: 235px; }
+
+  .bnr-slider-cover .brand-images {
+    column-gap: 30px;
+    padding-top: 30px; }
+
+  .bnr-slider-cover .brand-images .brand-text {
+    font: 600 90px/97px "Playfair Display", serif;
+    left: -70px;
+    bottom: 300px; }
+
+  .banner {
+    height: 690px; }
+
+  .banner:before, .banner:after {
+    height: 95px; }
+
+  .banner:after {
+    width: 52%; }
+
+  .banner .slick-dots {
+    bottom: 140px; }
+
+  .banner .connect-business .icon {
+    right: 20px; }
+
+  .banner {
+    padding-top: 65px; } }
+@media (max-width: 1399px) {
+  .bnr-slider-cover .brand-images .brand-text {
+    left: -140px;
+    font-size: 70px; } }
+@media (max-width: 1281px) {
+  .bnr-slider-cover .brand-images .brand-lg {
+    padding-top: 30px; }
+
+  .bnr-slider-cover .brand-images .brand-text {
+    bottom: 210px; } }
+@media (max-width: 1199px) {
+  .banner {
+    height: 660px; }
+
+  .bnr-slider-cover .brand-images {
+    padding-top: 110px; }
+
+  .bnr-slider-cover .brand-titles {
+    width: 48.666667%; }
+
+  .bnr-slider-cover .brand-images .brand-lg {
+    width: 280px; }
+
+  .bnr-slider-cover .brand-images .brand-sm {
+    width: 155px; }
+
+  .bnr-slider-cover .brand-images .brand-text {
+    bottom: 160px; }
+
+  .bnr-slider-cover .brand-titles .tilte-lg {
+    font: 600 39px/55px "Playfair Display", serif; }
+
+  .bnr-slider-cover .brand-titles
+  .bnr-slider-cover .brand-images .brand-text {
+    left: -120px;
+    font-size: 65px;
+    bottom: 170px; }
+
+  .bnr-slider-cover .brand-titles .tilte-lg br {
+    display: none; }
+
+  .banner:after {
+    width: 50%; }
+
+  .banner:before, .banner:after {
+    height: 75px; } }
+@media (max-width: 991px) {
+  .bnr-slider-cover .brand-images {
+    column-gap: 20px;
+    padding-top: 30px; }
+
+  .bnr-slider-cover .brand-images .brand-lg {
+    width: 200px; }
+
+  .bnr-slider-cover .brand-titles .tilte-lg {
+    font: 600 32px/43px "Playfair Display", serif; }
+
+  .bnr-slider-cover .brand-titles {
+    width: 58.666667%;
+    margin-bottom: 90px; }
+
+  .banner:after {
+    width: 70%; }
+
+  .bnr-slider-cover .brand-images .brand-text {
+    left: -90px;
+    font-size: 48px; }
+
+  .bnr-slider-cover .brand-images .brand-sm {
+    width: 75px; }
+
+  .bnr-slider-cover {
+    padding: 0 20px; }
+
+  .banner {
+    height: auto; }
+
+  .banner:before, .banner:after {
+    display: none; }
+
+  .banner .connect-business .icon {
+    position: static;
+    margin-left: 20px;
+    margin-right: 0 !important; }
+
+  .bnr-slider-cover .brand-titles .connect-business {
+    min-width: 230px;
+    justify-content: center; }
+
+  .brand-images {
+    display: none !important; }
+
+  .banner {
+    border-radius: 0; }
+
+  .bnr-slider-cover .brand-titles .tilte-lg {
+    font: 600 28px/37px "Playfair Display", serif; }
+
+  .bnr-slider-cover .brand-titles p {
+    font: 300 14px/21px "Poppins", sans-serif; }
+
+  .bnr-slider-cover .brand-titles {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center; }
+
+  .mobile-brand-img {
+    display: block; }
+
+  .banner .slick-dots, .banner .slick-dots:after {
+    position: static;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+  .bnr-slider-cover .brand-titles .tilte-lg {
+    margin-top: 35px; }
+
+  .banner .slick-dots:after {
+    margin-left: 10px; }
+
+  .banner .slick-arrow {
+    display: none !important; }
+
+  .banner .slick-next {
+    position: static;
+    margin-left: auto; }
+
+  .bnr-slider-cover {
+    padding: 0 10px; } }
+
+/*# sourceMappingURL=banner.css.map */

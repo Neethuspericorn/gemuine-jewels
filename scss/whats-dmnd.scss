@@ -1,0 +1,186 @@
+@import "partials/partials";
+
+.page-banner.whats-dmnd-banner{
+    background: {
+        image: url('../img/wht-dmnd-banner.png');
+    }
+}
+.testimonial-sec.testimonial-wht-sec-m{
+    margin-top: 180px;
+}
+.wht-dmnd-sec{
+    overflow: hidden;
+    padding-top: 100px;
+    &.txt-position-opac{
+        &::before{
+            top: 200px;
+        }
+        &::after{
+            right: -170px;
+            bottom: 17%;
+        }
+    }
+    .sec-title{
+        font-size: 64px;
+    }
+    .wht-dmnd-row{
+        padding: 60px 0;
+        display: flex;
+        .img-col{
+            flex: 0 0 auto;
+        }
+        .content-col{
+            font-family: $font-primary;
+            flex: 1 1 auto;
+            padding-left: 80px;
+            &.content-col-pt{
+                padding-top: 80px;
+            }
+            &.content-col-left{
+                padding-left: 0;
+                padding-right: 80px;
+            }
+           
+            .text{
+                font-size: 19px;
+                line-height: 33px;
+                font-family: $font-primary-poppin;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+.sub-title{
+    margin-bottom: 30px;
+    font-size: 65px;
+    @media ($sm-1679){
+        font-size: 41px;
+    }
+    @media ($sm-1199){
+        font-size: 35px;
+    }
+    @media ($sm-991){
+        font-size: 30px;
+    }
+    @media ($sm-579){
+        font-size: 25px;
+    }
+}
+@media ($sm-1679){
+    
+    .wht-dmnd-sec{
+        padding-top: 60px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row {
+        padding: 45px 0;
+    }
+    .testimonial-sec.testimonial-wht-sec-m{
+        margin-top: 150px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .img-col{
+        width: 500px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col .text {
+        font-size: 17px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col .sub-title{
+        margin-bottom: 15px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col.content-col-pt {
+        padding-top: 55px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col {
+        padding-left: 55px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col.content-col-left {
+        padding-left: 0;
+        padding-right: 55px;
+    }
+    .txt-position-opac::after {
+        font-size: 132px;
+        right: -145px !important;
+    }
+}
+@media ($sm-1441){
+    .testimonial-sec.testimonial-wht-sec-m {
+        margin-top: 120px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col .text {
+        font-size: 16px;
+    }
+    // .wht-dmnd-sec .wht-dmnd-row .img-col {
+    //     width: 435px;
+    // }
+}
+@media ($sm-1199){
+    .wht-dmnd-sec .wht-dmnd-row .img-col {
+        width: 445px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col .text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col {
+        padding-left: 35px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row {
+        padding: 30px 0;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col.content-col-pt {
+        padding-top: 25px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col.content-col-left {
+        padding-right: 35px;
+    }
+}
+@media ($sm-991){
+    .wht-dmnd-sec .wht-dmnd-row{
+        flex-wrap: wrap;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .img-col, .wht-dmnd-sec .wht-dmnd-row .content-col{
+        width: 100%;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .img-col{
+        text-align: center;
+        img{
+            max-height: 300px;
+        }
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col{
+        padding-left: 0;
+        padding-top: 25px;
+        order: 1;
+    }
+    .testimonial-sec.testimonial-wht-sec-m {
+        margin-top: 20px;
+    }
+    .wht-dmnd-sec {
+        padding-top: 30px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col.content-col-left{
+        padding-right: 0;
+    }
+}
+@media ($sm-767){
+    .wht-dmnd-sec .container-padding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media ($sm-579){
+    .wht-dmnd-sec .wht-dmnd-row .content-col .text {
+        font-size: 14px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .img-col img {
+        max-height: 245px;
+    }
+    .wht-dmnd-sec .wht-dmnd-row {
+        padding: 20px 0;
+    }
+    .wht-dmnd-sec .wht-dmnd-row .content-col .text{
+        text-align: justify;
+    }
+
+}

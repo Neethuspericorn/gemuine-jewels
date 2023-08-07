@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    outline: 0; }
+  a:focus {
+    text-decoration: none; }
+
+a[href^=tel] {
+  cursor: default; }
+
+ul,
+ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+.outer-main {
+  overflow-x: hidden; }
+
+@media (min-width: 1679px) {
+  .custom-container {
+    max-width: 1600px; } }
+.container-padding {
+  padding-left: 100px;
+  padding-right: 100px; }
+  @media (max-width: 1399px) {
+    .container-padding {
+      padding-left: 50px;
+      padding-right: 50px; } }
+  @media (max-width: 1199px) {
+    .container-padding {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (max-width: 991px) {
+    .container-padding {
+      padding-left: 50px;
+      padding-right: 50px; } }
+  @media (max-width: 767px) {
+    .container-padding {
+      padding-left: 30px;
+      padding-right: 30px; } }
+
+@media (max-width: 991px) {
+  .custom-container {
+    max-width: 100%; } }
+
+.txt-position-opac {
+  position: relative; }
+  .txt-position-opac::before {
+    content: "jewels";
+    position: absolute;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+    font-family: "Playfair Display", serif;
+    font-size: 170px;
+    font-weight: 600;
+    color: #F8F8F7;
+    margin-bottom: 30px;
+    top: 115px;
+    left: -200px;
+    text-transform: capitalize; }
+    @media (max-width: 1679px) {
+      .txt-position-opac::before {
+        top: 101px;
+        left: -179px;
+        font-size: 145px; } }
+    @media (max-width: 1380px) {
+      .txt-position-opac::before {
+        left: -171px;
+        font-size: 130px; } }
+    @media (max-width: 1140px) {
+      .txt-position-opac::before {
+        content: none; } }
+  .txt-position-opac::after {
+    content: "jewels";
+    position: absolute;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+    right: -170px;
+    bottom: 0;
+    color: #F8F8F7;
+    text-transform: capitalize;
+    font-size: 170px; }
+    @media (max-width: 1679px) {
+      .txt-position-opac::after {
+        font-size: 145px;
+        right: -145px; } }
+    @media (max-width: 1140px) {
+      .txt-position-opac::after {
+        content: none; } }
+
+.btn-schedule {
+  background: #3A598E;
+  color: #fff;
+  border-radius: 6px;
+  padding: 18px 30px;
+  border-color: #3A598E;
+  font-size: 18px;
+  min-width: 280px;
+  display: inline-flex;
+  text-align: center;
+  justify-content: space-between; }
+  .btn-schedule:hover {
+    color: #ffffff; }
+    .btn-schedule:hover img {
+      transform: translateX(3px); }
+  @media (max-width: 1679px) {
+    .btn-schedule {
+      font-size: 15px;
+      padding: 15px 30px; } }
+  @media (max-width: 767px) {
+    .btn-schedule {
+      justify-content: center; } }
+  .btn-schedule img {
+    margin-left: 14px;
+    object-fit: contain;
+    transition: all ease-in-out 0.2s; }
+
+.about-details-section {
+  padding-top: 150px; }
+  .about-details-section .img-desk {
+    display: block; }
+  .about-details-section .img-ipad {
+    display: none; }
+  @media (max-width: 991px) {
+    .about-details-section {
+      padding-top: 35px; }
+      .about-details-section .img-desk {
+        display: none; }
+      .about-details-section .img-ipad {
+        display: block;
+        border-radius: 10px; } }
+  @media (max-width: 767px) {
+    .about-details-section {
+      padding-top: 20px; } }
+  @media (max-width: 991px) {
+    .about-details-section .about-details-inner .abt-sub .left-abt-section {
+      width: 100%;
+      padding-right: 0; } }
+  @media (max-width: 991px) {
+    .about-details-section .about-details-inner .abt-sub .left-abt-section img {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center; } }
+  .about-details-section .about-details-inner .abt-sub .right-abt-section {
+    padding-left: 60px; }
+    @media (max-width: 1199px) {
+      .about-details-section .about-details-inner .abt-sub .right-abt-section {
+        padding-left: 40px; } }
+    @media (max-width: 991px) {
+      .about-details-section .about-details-inner .abt-sub .right-abt-section {
+        padding-right: 0;
+        width: 100%;
+        margin-top: 25px;
+        padding-left: 0px; } }
+    @media (max-width: 767px) {
+      .about-details-section .about-details-inner .abt-sub .right-abt-section {
+        margin-top: 16px; } }
+    .about-details-section .about-details-inner .abt-sub .right-abt-section h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 50px;
+      font-weight: 600;
+      color: #08172C;
+      margin-bottom: 30px; }
+      @media (max-width: 1679px) {
+        .about-details-section .about-details-inner .abt-sub .right-abt-section h3 {
+          font-size: 41px;
+          margin-bottom: 20px; } }
+      @media (max-width: 991px) {
+        .about-details-section .about-details-inner .abt-sub .right-abt-section h3 {
+          font-size: 35px; } }
+      @media (max-width: 767px) {
+        .about-details-section .about-details-inner .abt-sub .right-abt-section h3 {
+          font-size: 33px; } }
+      @media (max-width: 579px) {
+        .about-details-section .about-details-inner .abt-sub .right-abt-section h3 {
+          font-size: 28px;
+          margin-bottom: 13px; } }
+    .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section {
+      color: #3E3E3E; }
+      .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section .main-cont {
+        font: 400 20px/33px "Poppins", sans-serif; }
+        @media (max-width: 1679px) {
+          .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section .main-cont {
+            font: 400 16px/27px "Poppins", sans-serif; } }
+        @media (max-width: 767px) {
+          .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section .main-cont {
+            font: 400 14px/22px "Poppins", sans-serif; } }
+      .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section ul li {
+        font: 400 18px/25px "Poppins", sans-serif;
+        margin-bottom: 13px;
+        position: relative;
+        padding-left: 33px; }
+        @media (max-width: 1679px) {
+          .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section ul li {
+            font: 400 16px/25px "Poppins", sans-serif;
+            margin-bottom: 8px; } }
+        @media (max-width: 767px) {
+          .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section ul li {
+            font: 400 14px/24px "Poppins", sans-serif; } }
+        @media (max-width: 580px) {
+          .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section ul li {
+            margin-bottom: 5px; } }
+        .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section ul li::after {
+          content: "";
+          width: 18px;
+          height: 2px;
+          position: absolute;
+          left: 0;
+          top: 11px;
+          background: #808283; }
+      .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section h4 {
+        margin-top: 35px;
+        margin-bottom: 25px;
+        font: 400 42px/50px "Playfair Display", serif; }
+        @media (max-width: 1679px) {
+          .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section h4 {
+            margin-top: 23px;
+            margin-bottom: 17px;
+            font: 400 35px/45px "Playfair Display", serif; } }
+        @media (max-width: 991px) {
+          .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section h4 {
+            font: 400 32px/41px "Playfair Display", serif; } }
+        @media (max-width: 579px) {
+          .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section h4 {
+            font: 400 26px/35px "Playfair Display", serif;
+            margin-top: 15px;
+            margin-bottom: 10px; } }
+      .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section .sub-content .sub-txt {
+        font: 400 20px/33px "Poppins", sans-serif; }
+        @media (max-width: 1679px) {
+          .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section .sub-content .sub-txt {
+            font: 400 16px/27px "Poppins", sans-serif; } }
+        @media (max-width: 1679px) {
+          .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section .sub-content .sub-txt {
+            font: 400 14px/24px "Poppins", sans-serif; } }
+        .about-details-section .about-details-inner .abt-sub .right-abt-section .content-abt-section .sub-content .sub-txt span.bold {
+          color: #3E3E3E;
+          font-weight: 600; }
+
+.product-list-section {
+  margin-top: 271px; }
+  @media (max-width: 1679px) {
+    .product-list-section {
+      margin-top: 220px; } }
+  @media (max-width: 991px) {
+    .product-list-section {
+      margin-top: 130px; } }
+  @media (max-width: 767px) {
+    .product-list-section {
+      margin-top: 45px; }
+      .product-list-section .container-padding {
+        padding-left: 15px;
+        padding-right: 15px; } }
+  .product-list-section .product-list-bg {
+    position: relative; }
+    .product-list-section .product-list-bg::before {
+      content: "";
+      background: url(../img/product-bg-img.png);
+      position: absolute;
+      height: 655px;
+      width: 100%;
+      z-index: -1;
+      top: -130px; }
+      @media (max-width: 1679px) {
+        .product-list-section .product-list-bg::before {
+          top: -90px;
+          height: 490px; } }
+      @media (max-width: 991px) {
+        .product-list-section .product-list-bg::before {
+          height: 360px; } }
+      @media (max-width: 767px) {
+        .product-list-section .product-list-bg::before {
+          top: -39px; } }
+  .product-list-section .product-inner-sec h3 {
+    font: 600 50px/60px "Playfair Display", serif;
+    text-align: center; }
+    @media (max-width: 1679px) {
+      .product-list-section .product-inner-sec h3 {
+        font: 600 41px/49px "Playfair Display", serif; } }
+    @media (max-width: 991px) {
+      .product-list-section .product-inner-sec h3 {
+        font: 600 35px/40px "Playfair Display", serif; } }
+    @media (max-width: 500px) {
+      .product-list-section .product-inner-sec h3 {
+        font: 600 28px/35px "Playfair Display", serif; } }
+  .product-list-section .product-inner-sec .product-list {
+    margin-top: 55px; }
+    @media (max-width: 767px) {
+      .product-list-section .product-inner-sec .product-list {
+        margin-top: 30px; } }
+    .product-list-section .product-inner-sec .product-list .product-dtl {
+      margin-bottom: 20px; }
+      @media (max-width: 579px) {
+        .product-list-section .product-inner-sec .product-list .product-dtl {
+          display: flex;
+          flex-direction: column;
+          align-items: center; } }
+      .product-list-section .product-inner-sec .product-list .product-dtl img {
+        height: 520px;
+        border-radius: 5px;
+        width: 100%;
+        object-fit: cover; }
+        @media (max-width: 1679px) {
+          .product-list-section .product-inner-sec .product-list .product-dtl img {
+            height: 365px; } }
+        @media (max-width: 991px) {
+          .product-list-section .product-inner-sec .product-list .product-dtl img {
+            height: 275px; } }
+        @media (max-width: 767px) {
+          .product-list-section .product-inner-sec .product-list .product-dtl img {
+            height: 210px; } }
+        @media (max-width: 579px) {
+          .product-list-section .product-inner-sec .product-list .product-dtl img {
+            height: 250px;
+            width: auto; } }
+        @media (max-width: 350px) {
+          .product-list-section .product-inner-sec .product-list .product-dtl img {
+            height: 205px;
+            width: auto; } }
+      .product-list-section .product-inner-sec .product-list .product-dtl p {
+        font: 400 23px/30px "Playfair Display", serif;
+        color: #08172C;
+        margin-top: 13px;
+        padding-left: 5px; }
+        @media (max-width: 1679px) {
+          .product-list-section .product-inner-sec .product-list .product-dtl p {
+            font: 400 19px/25px "Playfair Display", serif; } }
+
+@media (max-width: 1679px) {
+  .excellence-section {
+    padding-top: 120px; } }
+@media (max-width: 1441px) {
+  .excellence-section {
+    padding-top: 90px; } }
+@media (max-width: 1199px) {
+  .excellence-section {
+    padding-top: 70px; } }
+@media (max-width: 767px) {
+  .excellence-section {
+    padding-top: 40px; } }
+.excellence-section.txt-position-opac::before {
+  content: none; }
+.excellence-section .content-abt-section p {
+  font: 400 20px/33px "Poppins", sans-serif;
+  color: #3E3E3E; }
+  @media (max-width: 1679px) {
+    .excellence-section .content-abt-section p {
+      font: 400 16px/27px "Poppins", sans-serif; } }
+  @media (max-width: 767px) {
+    .excellence-section .content-abt-section p {
+      font: 400 14px/24px "Poppins", sans-serif; } }
+
+/*# sourceMappingURL=main.css.map */

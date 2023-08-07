@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    outline: 0; }
+  a:focus {
+    text-decoration: none; }
+
+a[href^=tel] {
+  cursor: default; }
+
+ul,
+ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+.accordion-faq .accordion-item {
+  border: 1px solid #D5D5D5 !important;
+  border-radius: 1em;
+  overflow: clip;
+  font-size: 24px; }
+  .accordion-faq .accordion-item + .accordion-item {
+    margin-top: 1em; }
+.accordion-faq .accordion-button {
+  padding: 40px 70px;
+  color: #08172C;
+  box-shadow: none;
+  font-size: 1em;
+  font-weight: 500; }
+  .accordion-faq .accordion-button:after {
+    display: none; }
+  .accordion-faq .accordion-button:not(.collapsed) {
+    background-color: #ffffff;
+    color: #08172C; }
+  @media (max-width: 1679px) {
+    .accordion-faq .accordion-button {
+      padding: 10px 20px; } }
+  .accordion-faq .accordion-button span.arrow {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    position: relative; }
+    .accordion-faq .accordion-button span.arrow:before, .accordion-faq .accordion-button span.arrow:after {
+      display: block;
+      content: '';
+      height: 2px;
+      width: 100%;
+      background-color: #19335F;
+      transition: all ease-in-out 0.2s; }
+    .accordion-faq .accordion-button span.arrow:after {
+      position: absolute;
+      transform: rotate(90deg);
+      top: calc(50% - 1px); }
+  .accordion-faq .accordion-button[aria-expanded="true"] span.arrow:after {
+    transform: rotate(-180deg); }
+.accordion-faq .accordion-body {
+  font-size: 0.75em;
+  padding: 40px 70px;
+  padding-top: 0; }
+  @media (max-width: 1679px) {
+    .accordion-faq .accordion-body {
+      padding: 10px 50px; } }
+
+/*# sourceMappingURL=faq.css.map */

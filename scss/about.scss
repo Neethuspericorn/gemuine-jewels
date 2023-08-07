@@ -1,0 +1,433 @@
+@import "partials/partials";
+
+.page-banner.about-us-banner{
+    background-image: url('../img/abt-bnr2x.png');
+}
+.abt-sections{
+    padding-top: 160px;
+    padding-bottom: 80px;
+    position: relative;
+    & + .abt-sections{
+        padding-top: 80px;
+    }
+    .sec-title{
+        font-family: $font-primary;
+        font-size: 48px;
+        margin-bottom: 30px;
+        @media ($sm-1679){
+            font-size: 41px;
+            margin-bottom: 20px;
+        }
+        @media ($sm-991){
+            font-size: 35px;
+        }
+    }
+    .text{
+        font-size: 20px;
+        @media (max-width: 1679px){
+            font-size: 16px;
+        }
+        @media (max-width: 991){
+            font-size: 14px;
+        }
+    }
+    .img-col{
+        position: relative;
+        .sec-img{
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .img-bg{
+        padding: 10px 110px 50px 15px;
+        background-color: #E8F0FF;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: calc(50% - 80px);
+        width: 528px;
+        height: 520px;
+        max-width: calc(100% - 140px);
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        border-radius: 0 0 89px 0;
+        // left: 180px;
+        .txt{
+            font-family: $font-primary;
+            font-size: 44px;
+            text-align: right;
+            span{
+                // font-size: 1.66em;
+                // padding-left: 0.545em;
+                font-size: 72px;
+                padding-left: 20px;
+            }
+        }
+    }
+
+ 
+
+    &.who-are-we{
+        &.txt-position-opac{
+            &::after{
+                display: none;
+            }
+        }
+        .content-col{
+            padding-bottom: 40px;
+            padding-left: 70px;
+        }
+        .img-col{
+            padding-bottom: 160px;
+            padding-right: 40px;
+        }
+
+        &:before{
+           top: 480px;
+        }
+    }
+
+    &.abt-info-2{
+        .img-col{
+            padding-left: 70px;
+        }
+        &.txt-position-opac{
+            &::before{
+                content: '';
+                width: 100%;
+                height: 700px;
+                left: 0;
+                bottom: 0;
+                transform: none;
+                z-index: -1;
+                top: auto;
+                background: {
+                    image: url('../img/abt-line.svg');
+                    repeat: no-repeat;
+                    position: -80px bottom;
+                    size: cover;
+                };
+                font-size: 0;
+                margin-bottom: 0;
+            }
+            &::after{
+                right: -160px;
+                z-index: -2;
+            }
+        }
+    }
+}
+.outer-main{
+    overflow-x: hidden;
+}
+
+@media ($sm-1679){
+    .abt-sections .img-bg .txt{
+        font-size: 36px;
+    }
+    .abt-sections .img-bg .txt span {
+        font-size: 56px;
+        padding-left: 15px;
+    }
+    .abt-sections.who-are-we:before {
+        top: 425px;
+    }
+    .abt-sections .img-bg{
+        height: 410px;
+        padding: 10px 90px 50px 15px
+    }
+    .abt-sections.abt-info-2.txt-position-opac::before {
+        height: 535px;
+    }
+}
+@media (max-width: 1399px){
+    .abt-sections .img-bg .txt span {
+        font-size: 50px;
+        padding-left: 8px;
+    }
+    .abt-sections .img-bg {
+        height: 370px;
+        padding: 10px 75px 35px 15px;
+    }
+    .abt-sections .img-bg .txt {
+        font-size: 30px;
+    }
+}
+@media ($sm-1199){
+    .abt-sections .text {
+        font-size: 15px;
+    }
+    .abt-sections .sec-title {
+        font-size: 35px;
+    }
+    .abt-sections .img-bg {
+        height: 315px;
+        padding: 10px 75px 35px 15px;
+    }
+    .abt-sections .img-bg .txt {
+        font-size: 25px;
+    }
+    .abt-sections .img-bg .txt span {
+        font-size: 42px;
+    }
+}
+@media ($sm-991){
+    .abt-sections-row{
+        flex-wrap: wrap;
+    }
+    .abt-sections .img-col .sec-img{
+        max-height: 300px;
+        margin: 0 auto;
+    }
+    .abt-sections .img-col{
+        padding-left: 15px;
+        text-align: center;
+    }
+    .abt-sections.who-are-we .img-col {
+        padding-bottom: 75px;
+        padding-right: 15px;
+    }
+    .abt-sections .img-bg {
+        height: 260px;
+        max-width: none;
+        padding: 10px 75px 20px 15px;
+        width: 265px;
+        left: calc(50% - 100px);
+        right: auto;
+    }
+    .abt-sections .img-bg .txt {
+        font-size: 20px;
+    }
+    .abt-sections .img-bg .txt span {
+        font-size: 32px;
+    }
+    .abt-sections.abt-info-2 .img-col{
+        padding-left: 15px;
+    }
+    .abt-sections .content-col {
+        padding-top: 25px;
+    }
+    .abt-sections.abt-info-2 .img-col {
+        margin-bottom: 0;
+    }
+    .abt-sections.who-are-we .content-col {
+        padding-bottom: 0;
+        padding-left: 15px;
+    }
+}
+@media ($sm-767){
+    .abt-sections .container-padding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .abt-sections .img-bg {
+        height: 215px;
+        max-width: none;
+        padding: 10px 75px 10px 15px;
+        width: 235px;
+        border-radius: 0 0 70px 0;
+    }
+    .abt-sections .img-bg .txt {
+        font-size: 17px;
+    }
+    .abt-sections .img-bg .txt span {
+        font-size: 28px;
+    }
+}
+@media ($sm-579){
+    .abt-sections .img-col .sec-img {
+        max-height: 245px;
+    }
+    .abt-sections .sec-title {
+        font-size: 25px;
+    }
+    .abt-sections .text {
+        font-size: 14px;
+        text-align: justify;
+    }
+    .abt-sections.who-are-we .content-col{
+        padding-top: 10px;
+    }
+}
+
+.section-faq{
+    padding-bottom: 130px;
+    .sec-title{
+        font: normal normal 500 48px/77px $font-primary;
+        color: $hading-color;
+        margin-bottom: 60px;
+    }
+    .accordion-item{
+        border: 1px solid $collapse_border;
+        border-radius: 24px;
+        padding: 40px;
+    }
+    .accordion-header{
+        
+        .accordion-button{
+            color: $hading-color;
+            background-color: transparent;
+            font: normal normal 500 24px/32px $font-primary-poppin;
+            padding-top: 0px;
+            &::after {
+                content: "+";
+                display: flex;
+                flex-shrink: 0;
+                width: 28px;
+                height: 28px;
+                font-size: 40px;
+                margin-left: auto;
+                transition: transform .2s ease-in-out;
+                background-image: none;
+            }
+            &:not(.collapsed){
+                &::after{
+                    content: "-";
+                    transform: none;
+                }
+            }
+            
+            &:focus{
+                box-shadow: none;
+                outline: none;
+            }
+            &::before{
+                content: "";
+                width: 14px;
+                height: 2px;
+                background: $hading-color;
+                margin-right: 15px;
+            }
+        }
+    }
+    .accordion-body{
+        font: normal normal normal 18px/26px $font-primary-poppin;
+        padding-bottom: 0px;
+        padding-left: 45px;
+    }
+}
+@media (min-width:1680px){
+    .section-faq .container{
+        max-width: 1600px;
+    }
+}
+@media ($sm-1679){
+    .section-faq{
+        padding-bottom: 65px;
+    }
+    .section-faq .sec-title{
+        margin-bottom: 40px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .section-faq .accordion-item{
+        padding: 25px;
+    }
+    .section-faq .accordion-header .accordion-button{
+        font: normal normal 500 20px/28px $font-primary-poppin;
+    }
+    .section-faq .accordion-body {
+        font: normal normal normal 16px/22px "Poppins", sans-serif;
+    }
+    .abt-sections {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    .section-faq .accordion-header .accordion-button::after{
+        font-size: 30px;
+    }
+}
+@media ($sm-1367){
+    .section-faq .accordion-item{
+        padding: 25px;
+        padding-bottom: 10px;
+    }
+    .section-faq .accordion-header .accordion-button{
+        font: normal normal 500 18px/24px $font-primary-poppin;
+    }
+    .section-faq .accordion-body {
+        font: normal normal normal 14px/20px "Poppins", sans-serif;
+    }
+    .section-faq .sec-title{
+        font: normal normal 500 41px/48px $font-primary;
+        margin-bottom: 30px;
+    }
+    .abt-sections {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    .abt-sections.abt-info-2{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+@media ($sm-991){
+    .sec-ready-made {
+        padding-top: 20px;
+    }
+    .abt-sections {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    .abt-sections.abt-info-2{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .section-faq{
+        padding-bottom: 20px;
+    }
+    .section-faq .container{
+        max-width: 100%;
+    }
+}
+@media ($sm-767){
+    .abt-sections.abt-info-2.txt-position-opac::before{
+        display: none;        
+    }
+    .sub-bnr{
+        &.abt{
+        background: $color-primary url(../img/abt-bnr2x.png) no-repeat center;
+        height: 300px;
+        background-size: cover;
+        }
+    }
+    .abt-sections{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .abt-sections.who-are-we{
+        margin: 50px 0 20px;
+    }
+    .abt-sections.abt-info-2{
+        padding-top: 0px;
+    }
+    .abt-sections.who-are-we:before{
+        display: none;
+    }
+    .section-faq .sec-title{
+        font-size: 26px;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
+    .section-faq .accordion-header .accordion-button{
+        font-size: 16px;
+    }
+    .accordion-faq .accordion-body{
+        font-size: 15px;
+    }
+    .section-faq .accordion-item {
+        padding: 25px 20px;
+    }
+    .section-faq .accordion-header .accordion-button{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .section-faq .accordion-body{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .abt-sections.abt-info-2 {
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,182 @@
+@import "partials/partials";
+
+.sec-inner{
+    padding: 83px 0 53px;
+    &.txt-position-opac{
+        &::after{
+            display: none;
+        }
+        &::before{
+          top: 180px;
+          left: -233px;
+          font: normal normal 600 220px/305px $font-primary;
+        }
+    }
+    .sub-sec-title-wrp{
+        border-bottom: 1px solid #DCEBF8;
+        margin-bottom: 21px;
+        padding-bottom: 10px;
+        .sub-sec-title{
+            font: normal normal 500 47px/63px $font-primary;
+            color: $hading-color;
+        }
+        p{
+            font: normal normal 300 19px/29px $font-primary-poppin;
+        }
+    }
+    .contact-form{
+        .form-control{
+            background-color: $input_bg_color;
+            border:1px solid $input_border;
+            border-radius: 0px;
+            margin-top: 36px;
+            height: 58px;
+            font: normal normal normal 18px/65px $font-primary-poppin;
+            &::-webkit-input-placeholder{
+                color: $input_placeholder;
+            }
+            &::-moz-input-placeholder{
+                color: $input_placeholder;
+            }
+            &::-o-input-placeholder{
+                color: $input_placeholder;
+            }
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+            &.txtarea{
+                height: 139px;
+            }
+        }
+        .btn-submit{
+            background-color: $btn-color-light;
+            color: $color-white;
+            font: normal normal 500 19px/22px $font-primary-poppin;
+            padding: 14px 48px;
+            border-radius: 6px;
+            margin-top: 24px;
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
+@media (max-width:1800px){
+    .sec-inner.txt-position-opac::before{
+        font: normal normal 600 175px/305px $font-primary;
+        left: -200px;
+    }
+}
+@media ($sm-1679){
+    .sec-inner {
+        padding: 60px 0 43px;
+    }
+    .sec-inner .sub-sec-title-wrp .sub-sec-title{
+        font: normal normal 500 40px/56px $font-primary;
+    }
+    .sec-inner.txt-position-opac::before {
+        top: 180px;
+        left: -200px;
+        font: normal normal 600 170px/305px $font-primary;
+    }
+    .sec-inner .contact-form .btn-submit {
+        font: normal normal 500 16px/22px "Poppins", sans-serif;
+    }
+    
+}
+@media ($sm-1441){
+    .sec-inner {
+        padding: 50px 0 40px;
+    }
+    .sec-inner .sub-sec-title-wrp .sub-sec-title{
+        font: normal normal 500 34px/50px $font-primary;
+    }
+    .sec-inner .sub-sec-title-wrp p {
+        font: normal normal 300 17px/27px $font-primary-poppin;
+    }
+    .sec-inner .contact-form .form-control{
+        margin-top: 25px;
+        font: normal normal normal 16px/46px $font-primary-poppin;
+        height: 45px;
+    }
+    .sec-inner.txt-position-opac::before {
+        top: 180px;
+        left: -200px;
+        font: normal normal 600 160px/305px $font-primary;
+    }
+    
+}
+@media ($sm-1281){
+    .sec-inner {
+        padding: 40px 0 35px;
+    }
+    .sec-inner .sub-sec-title-wrp .sub-sec-title{
+        font: normal normal 500 32px/46px $font-primary;
+    }
+    .sec-inner.txt-position-opac::before {
+        top: 180px;
+        left: -150px;
+        font: normal normal 600 120px/305px $font-primary;
+    }
+    .sec-inner .contact-form .btn-submit {
+        font: normal normal 500 15px/22px "Poppins", sans-serif;
+    }
+}
+@media ($sm-991){
+    .sec-inner {
+        padding: 35px 0 30px;
+    }
+    .sec-inner .sub-sec-title-wrp .sub-sec-title{
+        font: normal normal 500 28px/38px $font-primary;
+    }
+    .sec-inner .sub-sec-title-wrp p {
+        font: normal normal 300 17px/27px $font-primary-poppin;
+    }
+    .sec-inner .contact-form .form-control{
+        margin-top: 25px;
+        font: normal normal normal 14px/36px $font-primary-poppin;
+        height: 38px;
+    }
+    .sec-inner .contact-form .btn-submit {
+        font: normal normal 500 14px/20px "Poppins", sans-serif;
+    }
+    .sub-bnr{
+        &.contact{
+        .sub-bnr-content{
+            justify-content: flex-start;
+            padding-top: 0px;
+        }
+        }
+    }
+    
+}
+@media ($sm-767){
+    .sec-inner {
+        padding: 35px 0 30px;
+    }
+    .sec-inner .sub-sec-title-wrp{
+        margin-bottom: 5px;
+        padding-bottom: 0px;
+    }
+    .sec-inner .sub-sec-title-wrp .sub-sec-title{
+        font: normal normal 500 25px/35px Playfair Display;
+        margin-bottom: 10px;
+    }
+    .sec-inner .sub-sec-title-wrp p {
+        font: normal normal 300 15px/22px $font-primary-poppin;
+    }
+    .sub-bnr{
+        &.contact{
+        background: $color-primary url(../img/contact-banner2x.png) no-repeat center;
+        height: 250px;
+        background-size: cover;
+        .sub-bnr-content{
+            justify-content: flex-start;
+            padding-top: 0px;
+        }
+        }
+    }
+    
+}

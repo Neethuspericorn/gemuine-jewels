@@ -1,0 +1,138 @@
+// Custom Styles
+@import "partials/partials";
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    z-index: 99;
+    &.scrolled{
+        background:url(../img/banner-bg.png) no-repeat center center;
+        background-size: cover;
+        -webkit-box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.27);
+        -moz-box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.27);
+        box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.27);
+    }
+}
+.navbar-light .navbar-toggler-icon{
+    filter: brightness(0) invert(1);
+}
+.header-lg{
+    // background-color: #24406E !important;
+    padding:20px 0;
+     .navbar{
+        background-color: transparent !important;
+        .navbar-brand{
+            .logo{
+               width: 200px;
+            }
+        }
+        .nav-item{
+            margin: 0 32px;
+        }
+        .nav-link{
+            color: $color-white;
+            position: relative;
+           
+            padding: 0 0;
+            font: 300 17px/26px $font-primary-poppin;
+            &:hover, &:focus{
+                color: #fff !important;
+                &:before{
+                width: 100%;
+                }
+            }
+            &.active{
+                
+                &:before{
+                    content:"";
+                    width:100%;
+                    height: 2px;
+                    background-color: $color-white;
+                    position: absolute;
+                    bottom: -7px;
+                    left: 0;
+                    transition: all 0.2s ease-in-out;
+                  } 
+            }
+            &:before{
+                content:"";
+                width: 0;
+                height: 2px;
+                background-color: $color-white;
+                position: absolute;
+                bottom: -7px;
+                left: 0;
+                transition: all 0.2s ease-in-out;
+              }
+
+         
+            &.active{
+                color: #fff;
+            }
+        }
+     }
+}
+
+
+@media(max-width:1679px){ 
+.header-lg .navbar .navbar-brand .logo {
+    width: 180px;
+}
+
+}
+@media(max-width:1199px){ 
+.header-lg .navbar .navbar-brand .logo {
+    width: 160px;
+}
+}
+
+
+
+@media(max-width:991px){
+    .navbar-light .navbar-toggler-icon{
+        filter: brightness(0) invert(1);
+    }
+    .header-lg .navbar-light .navbar-toggler{
+        border: none;
+    }
+    
+    .header-lg .navbar .navbar-brand .logo {
+        width: 130px;
+    }
+.header-lg .navbar .navbar-brand .logo {
+    width: 120px;
+}
+.header-lg{
+    background-color: #17325d;
+    padding: 5px 0;
+    .navbar-nav{
+        padding-top: 15px;
+    }
+    .navbar-light .navbar-toggler{
+        box-shadow: none;
+    }
+}
+.header-lg .navbar .nav-item{
+    margin: 0 10px 15px;
+}
+.header-lg .navbar .nav-link:before{
+    display: none;
+}
+}
+@media(max-width:767px){ 
+
+.header-lg .navbar .nav-link{
+    font: 300 15px/20px "Poppins", sans-serif;
+}
+
+}
+
+@media(max-width:585px)
+{
+    .header-lg .navbar .navbar-brand .logo {
+        width: 120px;
+    }
+}
